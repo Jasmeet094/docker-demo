@@ -10,7 +10,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch('/api/weather', {
+      const response = await fetch('http://localhost:8000/api/weather', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
